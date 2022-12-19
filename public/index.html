@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/spinner.css" />
+
+    <script src="js/main.js" defer></script>
+    <title>Titcotour yardim</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <h2>ingilizce yardim</h2>
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li>
+              <a href="https://titcotour.com/" target="_blank"
+                >Titcotour Ana Sayfa</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="properEnglish">
+        <form id="image-form">
+          <h2>ingilizceyi duzelt</h2>
+          <div class="form-control">
+            <label for="prompt"
+              >Cumle yada paragraf girin
+              <textarea
+                type="text"
+                id="prompt"
+                name="prompt"
+                placeholder="Cümle yada paragraf yazın"
+              ></textarea>
+            </label>
+          </div>
+
+          <button type="submit" class="btn">Duzelt</button>
+        </form>
+      </section>
+      <section>
+        <div class="outputContainer">
+          <span id="output">sonuc burada gozukucek</span>
+        </div>
+      </section>
+      <!-- Turkceden Ingilizceye -->
+    </main>
+
+    <div class="spinner"></div>
+  </body>
+</html>
