@@ -75,10 +75,10 @@ function handleSelectChange() {
   const selectValue = selectElement.value;
   selectValue === 'translate'
     ? (title.textContent = 'İngilizceye Çevir')
-    : (title.textContent = 'İngilizceyi Düzenle');
+    : (title.textContent = 'İngilizceyi Düzelt');
   selectValue === 'translate'
     ? (submitButton.textContent = 'Çevir')
-    : (submitButton.textContent = 'Düzenle');
+    : (submitButton.textContent = 'Düzelt');
 }
 
 document.querySelector('#image-form').addEventListener('submit', onSubmit);
