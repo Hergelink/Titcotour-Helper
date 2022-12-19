@@ -9,8 +9,6 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-// set static folder
-app.use(express.static(path.join(__dirname, 'public')))
 
 
 // Set static folder

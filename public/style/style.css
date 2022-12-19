@@ -21,33 +21,24 @@ body {
 }
 
 /* Navbar */
-.navbar {
-  background: var(--primary-color);
-  color: #fff;
-  padding: 1rem;
+
+header {
+  height: 6rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  background-color: var(--primary-color);
 }
 
-.navbar ul {
-  list-style: none;
-  display: flex;
+header a {
+  width: 200px;
 }
 
-.navbar ul li {
-  margin-left: 1rem;
+header a img {
+  width: 100%;
 }
 
-.navbar a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.2rem;
-}
 
-.navbar a:hover {
-  color: var(--primary-color);
-}
 
 /* Main Area */
 
