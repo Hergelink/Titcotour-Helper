@@ -18,7 +18,7 @@ function onSubmit(e) {
       ? 'Translate this into english: ' + prompt
       : 'Correct this to standard English: ' + prompt;
 
-  console.log(editedPrompt);
+ 
 
   if (prompt === '') {
     alert('Cümle yada paragraf girin');
