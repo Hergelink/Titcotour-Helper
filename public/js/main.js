@@ -67,7 +67,7 @@ function removeSpinner() {
 }
 
 function copyToClipboard() {
-  const promptValue = document.querySelector('#prompt').value;
+  const promptValue = document.getElementById('output').innerText;
 
   navigator.clipboard.writeText(promptValue);
 }
