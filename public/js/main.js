@@ -54,7 +54,7 @@ async function generateCorrectEnglish(editedPrompt) {
 
     removeSpinner();
   } catch (error) {
-    // document.querySelector('.msg').textContent = error;
+   
     console.log(error);
   }
 }

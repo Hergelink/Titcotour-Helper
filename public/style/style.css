@@ -50,15 +50,21 @@ section {
   padding: 10px;
 }
 
-form {
-  width: 100%;
-  margin-inline: auto;
-}
+
 
 #emoji-container {
   display: block;
   font-size: 1.8rem;
-  margin-bottom: 0.8rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+form {
+  width: 100%;
+  margin-inline: auto;
+  font-size: 16px;
 }
 
 select {
@@ -71,12 +77,13 @@ select {
   font-size: 16px;
 }
 
-input {
-  width: 100%;
-  border: 0;
-  border-radius: 10px;
-  padding: 8px;
-  margin-top: 0.5rem;
+option {
+  font-size: 16px;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 700;
 }
 
 textarea {
@@ -87,6 +94,7 @@ textarea {
   padding: 8px;
   margin-top: 0.5rem;
   resize: vertical;
+  font-size: 16px;
 }
 
 button {
@@ -95,13 +103,13 @@ button {
   justify-content: center;
   align-items: center;
   width: 150px;
-  height: 30px;
+  height: 35px;
   background-color: var(--primary-color);
   color: white;
   border: 0;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   letter-spacing: 0.5px;
 }
@@ -113,7 +121,6 @@ button:hover {
 /* Output Container */
 .outputContainer {
   width: 100%;
-  background-color: white;
   margin-top: 1rem;
 }
 
@@ -127,6 +134,7 @@ button:hover {
   color: white;
   padding: 10px;
   cursor: pointer;
+  font-size: 16px;
 }
 
 @media (min-width: 768px) {

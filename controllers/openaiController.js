@@ -37,7 +37,7 @@ const correctEnglish = async (req, res) => {
 
     res.status(400).json({
       success: false,
-      error: 'Promp cannot be generated',
+      error: 'Prompt cannot be generated',
     });
   }
 };
