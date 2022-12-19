@@ -31,10 +31,15 @@
     <main>
       <section class="properEnglish">
         <form id="image-form">
-          <h2>ingilizceyi duzelt</h2>
+          <h2 id="title">İngilizceyi Düzenle</h2>
+          
           <div class="form-control">
+            <select name="selection" id="selection">
+              <option selected value="correct">Düzenle</option>
+              <option value="translate">Çeviri</option>
+            </select>
             <label for="prompt"
-              >Cumle yada paragraf girin
+              >Cümle ya da paragraf girin:
               <textarea
                 type="text"
                 id="prompt"
@@ -44,12 +49,12 @@
             </label>
           </div>
 
-          <button type="submit" class="btn">Duzelt</button>
+          <button type="submit" class="btn">Düzelt</button>
         </form>
       </section>
       <section>
         <div class="outputContainer">
-          <span id="output">sonuc burada gozukucek</span>
+          <span id="output">Sonuç burada gözükecek:</span>
         </div>
       </section>
       <!-- Turkceden Ingilizceye -->

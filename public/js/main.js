@@ -1,20 +1,33 @@
 const spanElement = document.querySelector('#output');
+const selectElement = document.querySelector('#selection');
+const title = document.querySelector('#title');
+const submitButton = document.querySelector('.btn');
 
-
+// English Corrector
 function onSubmit(e) {
   e.preventDefault();
 
+  
+  const selectValue = selectElement.value;
+
+
   const prompt = document.querySelector('#prompt').value;
+  const editedPrompt =
+    selectValue === 'translate'
+      ? 'Translate this into english: ' + prompt
+      : 'Correct this to standard English: ' + prompt;
+
+  console.log(editedPrompt);
 
   if (prompt === '') {
     alert('Cümle yada paragraf girin');
     return;
   }
 
-  generateImageRequest(prompt);
+  generateCorrectEnglish(editedPrompt);
 }
 
-async function generateImageRequest(prompt) {
+async function generateCorrectEnglish(editedPrompt) {
   try {
     showSpinner();
 
@@ -24,7 +37,7 @@ async function generateImageRequest(prompt) {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        prompt,
+        editedPrompt,
       }),
     });
 
@@ -54,11 +67,22 @@ function removeSpinner() {
 
 function copyToClipboard() {
   const promptValue = document.querySelector('#prompt').value;
-  
+
   navigator.clipboard.writeText(promptValue);
+}
+
+function handleSelectChange() {
+  const selectValue = selectElement.value;
+  selectValue === 'translate'
+    ? (title.textContent = 'İngilizceye Çevir')
+    : (title.textContent = 'İngilizceyi Düzenle');
+  selectValue === 'translate'
+    ? (submitButton.textContent = 'Çevir')
+    : (submitButton.textContent = 'Düzenle');
 }
 
 document.querySelector('#image-form').addEventListener('submit', onSubmit);
 
 spanElement.addEventListener('click', copyToClipboard);
 
+selectElement.addEventListener('change', handleSelectChange);

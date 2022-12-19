@@ -6,9 +6,9 @@ const configuration = new Configuration({
 
 const openai = new OpenAIApi(configuration);
 
-const generateImage = async (req, res) => {
-  const userPrompt = req.body.prompt;
-   
+const correctEnglish = async (req, res) => {
+  const userPrompt = req.body.editedPrompt;
+
   try {
     const reponse = await openai.createCompletion({
       model: 'text-davinci-003',
@@ -18,9 +18,8 @@ const generateImage = async (req, res) => {
       top_p: 1,
       frequency_penalty: 0,
       presence_penalty: 0,
-    })
+    });
 
-    
     const aiOutput = reponse.data.choices[0].text;
 
     res.status(200).json({
@@ -42,4 +41,4 @@ const generateImage = async (req, res) => {
   }
 };
 
-module.exports = { generateImage };
+module.exports = { correctEnglish };
