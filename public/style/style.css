@@ -51,6 +51,10 @@ body {
 
 /* Main Area */
 
+.properEnglish {
+  margin-top: 2rem;
+}
+
 section {
   width: 100%;
   padding: 10px;

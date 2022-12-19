@@ -1,7 +1,6 @@
 {
   "name": "titcotour-helper",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index",
@@ -17,5 +16,14 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hergelink/Titcotour-Helper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Hergelink/Titcotour-Helper/issues"
+  },
+  "homepage": "https://github.com/Hergelink/Titcotour-Helper#readme",
+  "description": ""
 }
