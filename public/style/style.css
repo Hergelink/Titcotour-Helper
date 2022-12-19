@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
 *,
 *:before,
@@ -13,7 +13,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: #333;
@@ -39,8 +39,6 @@ header a img {
   width: 100%;
 }
 
-
-
 /* Main Area */
 
 .properEnglish {
@@ -57,8 +55,10 @@ form {
   margin-inline: auto;
 }
 
-h2 {
-  margin-bottom: 1rem;
+#emoji-container {
+  display: block;
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
 }
 
 select {
@@ -68,6 +68,7 @@ select {
   border: 0;
   border-radius: 8px;
   margin-bottom: 1rem;
+  font-size: 16px;
 }
 
 input {
@@ -100,8 +101,14 @@ button {
   border: 0;
   border-radius: 8px;
   cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
 }
 
+button:hover {
+  background-color: rgb(34, 34, 206);
+}
 
 /* Output Container */
 .outputContainer {
@@ -122,15 +129,9 @@ button {
   cursor: pointer;
 }
 
-
 @media (min-width: 768px) {
   section {
     max-width: 800px;
     margin-inline: auto;
   }
 }
-
-
-
-
-

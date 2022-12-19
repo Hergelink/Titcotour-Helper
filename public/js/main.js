@@ -2,6 +2,7 @@ const spanElement = document.querySelector('#output');
 const selectElement = document.querySelector('#selection');
 const title = document.querySelector('#title');
 const submitButton = document.querySelector('.btn');
+const changeEmoji = document.getElementById('emoji-change');
 
 // English Corrector
 function onSubmit(e) {
@@ -76,9 +77,14 @@ function handleSelectChange() {
   selectValue === 'translate'
     ? (title.textContent = 'İngilizceye Çevir')
     : (title.textContent = 'İngilizceyi Düzelt');
+
   selectValue === 'translate'
     ? (submitButton.textContent = 'Çevir')
     : (submitButton.textContent = 'Düzelt');
+
+    selectValue === 'translate'
+    ? (changeEmoji.textContent = '🇹🇷')
+    : (changeEmoji.textContent = '🇬🇧');
 }
 
 document.querySelector('#image-form').addEventListener('submit', onSubmit);

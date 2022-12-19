@@ -12,7 +12,8 @@ const correctEnglish = async (req, res) => {
   try {
     const reponse = await openai.createCompletion({
       model: 'text-davinci-003',
-      prompt: `Correct this to standard English: ${userPrompt}`,
+      // prompt: `Correct this to standard English: ${userPrompt}`,
+      prompt: userPrompt,
       temperature: 0,
       max_tokens: 256,
       top_p: 1,
